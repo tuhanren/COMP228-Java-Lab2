@@ -26,8 +26,8 @@ public class Test {
         //this.correctRate = correctRate;
     }
     //getters
-    public int getCorrectAnswer() { return this.correctCount/2; }
-    public int getWrongAnswer() { return this.wrongCount/2; }
+    public int getCorrectAnswer() { return this.correctCount; }
+    public int getWrongAnswer() { return this.wrongCount; }
     //public double getCorrectRate() { return this.correctRate; }
     //methods
     public void simulateQuestion() {
@@ -38,7 +38,6 @@ public class Test {
                      JOptionPane.INFORMATION_MESSAGE,null,
                      choices, choices[0]);
              userSelects[i] = userSelect;
-             checkAnswer(i);
              JOptionPane.showMessageDialog(null,
                      generateMessage(i),
                      "Message",
