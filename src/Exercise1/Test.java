@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.security.SecureRandom;
 import java.util.Arrays;
 
+import static java.lang.Double.parseDouble;
+
 public class Test {
 
     private String[] questions;
@@ -37,7 +39,9 @@ public class Test {
                      questions[i], "Test",
                      JOptionPane.INFORMATION_MESSAGE,null,
                      choices, choices[0]);
+
              userSelects[i] = userSelect;
+
              JOptionPane.showMessageDialog(null,
                      generateMessage(i),
                      "Message",

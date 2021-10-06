@@ -25,6 +25,8 @@ public class TestApp {
                         correct rate:%.2f%%""",
                 obj.getCorrectAnswer(),
                 obj.getWrongAnswer(),
-                Double.parseDouble(String.valueOf(obj.getCorrectAnswer()))/5*100);
+                Double.parseDouble(String.valueOf(obj.getCorrectAnswer()))/5*100
+                //obj.getCorrectRate()
+        );
     }
 }
