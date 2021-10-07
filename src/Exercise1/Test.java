@@ -5,14 +5,34 @@ import java.util.Random;
 
 public class Test {
     //declare
-    String[] questions = {"What is 1?\n A.123\n B.123\n C.123\n D.123",
-            "What is 2?\n A.123\n B.123\n C.123\n D.123",
-            "What is 3?\n A.123\n B.123\n C.123\n D.123",
-            "What is 4?\n A.123\n B.123\n C.123\n D.123",
-            "What is 5?\n A.123\n B.123\n C.123\n D.123"
+    String[] questions = {"In which year did Sun Microsystems fund an internal corporate research project led by James Gosling, which resulted in a C++ -based object-oriented programming language that Sun called Java?\n" +
+                          "A.1999\n " +
+                          "B.1998\n " +
+                          "C.1991\n " +
+                          "D.1990",
+                            "Which of the following editions of Java  contains the capabilities needed to develop desktop and server applications?\n " +
+                                "A.Java Enterprise Edition (Java EE)\n " +
+                                "B.Java Enterprise Edition 2 (Java 2 EE)\n " +
+                                "C.Java Standard Edition 8 (Java SE 8)\n " +
+                                "D.Java Micro Edition (Java ME)",
+                            "What does an instance variable describe?\n " +
+                                "A.Behaviour of an object\n " +
+                                "B.Height of an object\n " +
+                                "C.Measurement of an object\n " +
+                                "D.Properties of an object",
+                            "When a method that specifies a return type other than void is called, what must the method do when it completes its task? and completes its task, the method must return a result to its calling method.\n " +
+                                "A.It must return one result only to the statement one line after the line from which it was called\n " +
+                                "B.It must return more than just one result to its caller\n " +
+                                "C.It must return one result to the statement immediately after the method body\n " +
+                                "D.It must return a result exactly to the point from which it was called",
+                            "Which of the following Java program units defines a group of related objects?\n " +
+                                "A.Java Class\n " +
+                                "B.Java method\n " +
+                                "C.Java\n " +
+                                "D.Java default constructor"
     };
     String[] choices = {"A", "B", "C", "D"};
-    String[] correctAnswer = {"A","A","A","A","A"};
+    String[] correctAnswer = {"C","C","C","D","A"};
     String[] userSelects = {"","","","",""};
     String userSelect;
     boolean check;
