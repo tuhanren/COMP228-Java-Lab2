@@ -5,36 +5,51 @@ import java.util.Random;
 
 public class Test {
     //declare
-    String[] questions = {"In which year did Sun Microsystems fund an internal corporate \n" +
-                            "research project led by James Gosling, which resulted in a \n" +
-                            "C++ -based object-oriented programming language that Sun called Java?\n" +
-                          "A.1999\n " +
-                          "B.1998\n " +
-                          "C.1991\n " +
-                          "D.1990",
-                            "Which of the following editions of Java  contains the capabilities \n" +
-                                    "needed to develop desktop and server applications?\n " +
-                                "A.Java Enterprise Edition (Java EE)\n " +
-                                "B.Java Enterprise Edition 2 (Java 2 EE)\n " +
-                                "C.Java Standard Edition 8 (Java SE 8)\n " +
-                                "D.Java Micro Edition (Java ME)",
-                            "What does an instance variable describe?\n " +
-                                "A.Behaviour of an object\n " +
-                                "B.Height of an object\n " +
-                                "C.Measurement of an object\n " +
-                                "D.Properties of an object",
-                            "When a method that specifies a return type other than void is called,\n" +
-                                    " what must the method do when it completes its task? and completes\n" +
-                                    " its task, the method must return a result to its calling method.\n " +
-                                "A.It must return one result only to the statement one line after the line from which it was called\n " +
-                                "B.It must return more than just one result to its caller\n " +
-                                "C.It must return one result to the statement immediately after the method body\n " +
-                                "D.It must return a result exactly to the point from which it was called",
-                            "Which of the following Java program units defines a group of related objects?\n " +
-                                "A.Java Class\n " +
-                                "B.Java method\n " +
-                                "C.Java\n " +
-                                "D.Java default constructor"
+    String[] questions = {"""
+                            In which year did Sun Microsystems fund an internal corporate\s
+                            research project led by James Gosling, which resulted in a\s
+                            C++ -based object-oriented programming language that Sun called Java?
+                            
+                            A.1999
+                             B.1998
+                             C.1991
+                             D.1990
+                            """,
+                            """
+                            Which of the following editions of Java  contains the capabilities\s
+                            needed to develop desktop and server applications?
+                            
+                             A.Java Enterprise Edition (Java EE)
+                             B.Java Enterprise Edition 2 (Java 2 EE)
+                             C.Java Standard Edition 8 (Java SE 8)
+                             D.Java Micro Edition (Java ME)
+                            """,
+                            """
+                            What does an instance variable describe?
+                            
+                             A.Behaviour of an object
+                             B.Height of an object
+                             C.Measurement of an object
+                             D.Properties of an object
+                            """,
+                            """
+                            When a method that specifies a return type other than void is called,what must the method\040
+                            do when it completes its task? and completes its task, the method must return a result\040
+                            to its calling method.
+                            
+                             A.It must return one result only to the statement one line after the line from which it was called
+                             B.It must return more than just one result to its caller
+                             C.It must return one result to the statement immediately after the method body
+                             D.It must return a result exactly to the point from which it was called
+                            """,
+                            """
+                            Which of the following Java program units defines a group of related objects?
+                            
+                             A.Java Class
+                             B.Java method
+                             C.Java
+                             D.Java default constructor
+                            """
     };
     String[] choices = {"A", "B", "C", "D"};
     String[] correctAnswer = {"C","C","C","D","A"};
