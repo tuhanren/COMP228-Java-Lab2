@@ -41,14 +41,17 @@ public class Test {
     float correctRate;
     //methods
     public void simulateQuestion() {
-
+        //define user select
         for (int i = 0; i <questions.length; i++) {
             userSelect = (String) JOptionPane.showInputDialog(null,
                     questions[i], "Test",
                     JOptionPane.INFORMATION_MESSAGE, null,
                     choices, choices[0]);
+            //collecting user input
              userSelects[i] = userSelect;
+             //check answer
              checkAnswer(i);
+             //generate message
              JOptionPane.showMessageDialog(null,
                      generateMessage(i),
                      "Message",
