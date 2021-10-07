@@ -2,7 +2,7 @@ package Exercise2;
 
 import java.util.Random;
 import java.util.stream.IntStream;
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class Lotto {
     //declare
@@ -29,15 +29,15 @@ public class Lotto {
             if(userChoice == generateArray()) {
                 String message = "You Win!\n" +
                                 "The Lucky Number is: " + generateArray();
-                JOptionPane.showMessageDialog(null,message);
+                JOptionPane.showMessageDialog(null,message,"Lotte",JOptionPane.INFORMATION_MESSAGE);
                 break;
             }
             else if(userChoice != generateArray()) {
                 String message = "Whoops! The lucky Number is: " + generateArray();
-                JOptionPane.showMessageDialog(null,message);
+                JOptionPane.showMessageDialog(null,message,"Lotte",JOptionPane.ERROR_MESSAGE);
             }
             if(i == 4) {
-                JOptionPane.showMessageDialog(null, "Computer Wins!");
+                JOptionPane.showMessageDialog(null, "Computer Wins!","Lotte",JOptionPane.WARNING_MESSAGE);
                 break;
             }
         }

@@ -1,16 +1,19 @@
 package Exercise1;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.Random;
 
 public class Test {
     //declare
-    String[] questions = {"In which year did Sun Microsystems fund an internal corporate research project led by James Gosling, which resulted in a C++ -based object-oriented programming language that Sun called Java?\n" +
+    String[] questions = {"In which year did Sun Microsystems fund an internal corporate \n" +
+                            "research project led by James Gosling, which resulted in a \n" +
+                            "C++ -based object-oriented programming language that Sun called Java?\n" +
                           "A.1999\n " +
                           "B.1998\n " +
                           "C.1991\n " +
                           "D.1990",
-                            "Which of the following editions of Java  contains the capabilities needed to develop desktop and server applications?\n " +
+                            "Which of the following editions of Java  contains the capabilities \n" +
+                                    "needed to develop desktop and server applications?\n " +
                                 "A.Java Enterprise Edition (Java EE)\n " +
                                 "B.Java Enterprise Edition 2 (Java 2 EE)\n " +
                                 "C.Java Standard Edition 8 (Java SE 8)\n " +
@@ -20,7 +23,9 @@ public class Test {
                                 "B.Height of an object\n " +
                                 "C.Measurement of an object\n " +
                                 "D.Properties of an object",
-                            "When a method that specifies a return type other than void is called, what must the method do when it completes its task? and completes its task, the method must return a result to its calling method.\n " +
+                            "When a method that specifies a return type other than void is called,\n" +
+                                    " what must the method do when it completes its task? and completes\n" +
+                                    " its task, the method must return a result to its calling method.\n " +
                                 "A.It must return one result only to the statement one line after the line from which it was called\n " +
                                 "B.It must return more than just one result to its caller\n " +
                                 "C.It must return one result to the statement immediately after the method body\n " +
@@ -45,7 +50,7 @@ public class Test {
         for (int i = 0; i <questions.length; i++) {
             userSelect = (String) JOptionPane.showInputDialog(null,
                     questions[i], "Test",
-                    JOptionPane.INFORMATION_MESSAGE, null,
+                    JOptionPane.QUESTION_MESSAGE, null,
                     choices, choices[0]);
             //collecting user input
              userSelects[i] = userSelect;
@@ -55,7 +60,7 @@ public class Test {
              JOptionPane.showMessageDialog(null,
                      generateMessage(i),
                      "Message",
-                     JOptionPane.PLAIN_MESSAGE);
+                     JOptionPane.INFORMATION_MESSAGE);
         }
 
     }
