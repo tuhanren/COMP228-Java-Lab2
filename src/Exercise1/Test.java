@@ -54,7 +54,7 @@ public class Test {
     };
     String[] choices = {"A", "B", "C", "D"};
     String[] correctAnswer = {"C","C","C","D","A"};
-    String[] userSelects = {"","","","",""};
+    String[] userSelects = new String[correctAnswer.length];
     String userSelect;
     boolean check;
     int correctCount = 0;
@@ -62,8 +62,8 @@ public class Test {
     float correctRate;
     //methods
     public void simulateQuestion() {
-        //define user select
         for (int i = 0; i <questions.length; i++) {
+            //define user select
             userSelect = (String) JOptionPane.showInputDialog(null,
                     questions[i], "Test",
                     JOptionPane.QUESTION_MESSAGE, null,
@@ -92,21 +92,18 @@ public class Test {
     public String generateMessage(int i) {
         Random random = new Random();
         if (check) {
-            switch(1+random.nextInt(4)) {
+            switch(random.nextInt(4)) {
                 case 1 -> { return "Excellent!"; }
                 case 2 -> { return "Good!"; }
                 case 3 -> { return "Keep up the good work!"; }
-                case 4 -> { return "Nice work!"; }
-                default -> { return  "Good."; }
+                default -> { return  "Nice work!"; }
             }
-
         }
         else {
-            switch(1+random.nextInt(4)) {
+            switch(random.nextInt(4)) {
                 case 1 -> { return "No. Please try again!"; }
                 case 2 -> { return "Wrong. Try once more!"; }
                 case 3 -> { return "Don't give up!"; }
-                case 4 -> { return "No. Keep Trying!"; }
                 default -> { return  "No. Keep Trying."; }
             }
         }

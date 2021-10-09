@@ -2,8 +2,6 @@ package Exercise2;
 
 import java.util.Random;
 
-
-
 public class Lotto {
     //declare
     int[] ranArray = new int[3];
@@ -13,7 +11,6 @@ public class Lotto {
         for (int i = 0; i < ranArray.length; i++) {
             ranArray[i] = random.nextInt(9-1)+1;
         }
-        //arraySum = IntStream.of(ranArray).sum();
     }
     //method for the random array and the sum
     public int[] generateArray() {
