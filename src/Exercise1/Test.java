@@ -2,6 +2,7 @@ package Exercise1;
 
 import javax.swing.JOptionPane;
 import java.util.Random;
+import java.text.NumberFormat;
 
 public class Test {
     //declare
@@ -77,7 +78,6 @@ public class Test {
                      "Message",
                      JOptionPane.INFORMATION_MESSAGE);
         }
-
     }
     public void checkAnswer(int i) {
         if (userSelects[i].equals(correctAnswer[i])){
@@ -112,18 +112,13 @@ public class Test {
         }
     }
     public void inputAnswer() {
+        //show percentage
+        NumberFormat showPercent = NumberFormat.getPercentInstance();
         simulateQuestion();
-        correctRate = (float)correctCount/ questions.length;//MUST process or it will be 0!
+        correctRate = (float)correctCount/questions.length;//MUST process or it will be 0!
         String message = "Your correct count is: " + correctCount + "\n" +
                          "Your wrong count is: " + wrongCount + "\n" +
-                         "Your correct rate is: " + correctRate;//Double.parseDouble(String.valueOf(correctCount))/5*100
+                         "Your correct rate is: " + showPercent.format(correctRate);//Double.parseDouble(String.valueOf(correctCount))/5*100
         JOptionPane.showMessageDialog(null, message);
-
-//        System.out.println(correctCount);
-//        System.out.println(wrongCount);
-//        System.out.printf("""
-//                Your correct count is: %d
-//                Your wrong count is: %d
-//                Your correct rate is: %.2f \s""", correctCount, wrongCount,correctRate);
     }
 }
